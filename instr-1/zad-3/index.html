@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 3</title>
+  </head>
+  <body>
+    <h1>Zalety języka HTML</h1>
+    <ul>
+      <li>Łatwy do nauki</li>
+      <li>Obsługiwany przez wszystkie przeglądarki</li>
+      <li>Jasno określa strukturę dokumentu</li>
+      <li>Dobra integracja z CSS i JavaScript</li>
+      <li>Wsparcie dla SEO</li>
+    </ul>
+
+    <h1>Kroki procesu tworzenia strony internetowej</h1>
+    <ol>
+      <li>Planowanie celu strony i grupy docelowej</li>
+      <li>Projektowanie UI i UX</li>
+      <li>
+        Kodowanie strony, tworzenie struktury w HTML, stylów w CSS, tworzenie
+        backendu itd.
+      </li>
+      <li>Testowanie i optymalizacja</li>
+      <li>Publikacja i utrzymanie</li>
+    </ol>
+
+    <h1>Definicje HTML</h1>
+    <dl>
+      <dt>DOCTYPE</dt>
+      <dd>
+        Deklaracja umieszczana na początku dokumentu HTML informująca
+        przeglądarkę o używanej wersji HTML.
+      </dd>
+      <dt>Tag</dt>
+      <dd>
+        Element składni HTML zapisany w nawiasach ostrokątnych. Określa
+        strukturę i rodzaj treści na stronie.
+      </dd>
+      <dt>Atrybut</dt>
+      <dd>
+        Dodatkowa informacja umieszczona w znaczniku, rozszerzająca jego
+        działanie.
+      </dd>
+      <dt>Element HTML</dt>
+      <dd>
+        Pełna struktura składająca się z tagu otwierającego, treści i tagu
+        zamykającego.
+      </dd>
+      <dt>Komentarz HTML</dt>
+      <dd>
+        Notatka w kodzie, niewidoczna dla użytkownika, używana do opisywania
+        fragmentów kodu.
+      </dd>
+    </dl>
+
+    <h1>Lista zagnieżdżona</h1>
+    <ul>
+      <li>
+        element główny
+        <ol>
+          <li>element podlisty</li>
+          <li>element podlisty</li>
+        </ol>
+      </li>
+      <li>
+        element główny
+        <ol>
+          <li>element podlisty</li>
+          <li>element podlisty</li>
+        </ol>
+      </li>
+      <li>element główny</li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Nazwa tagu</th>
+          <th>Przeznaczenie</th>
+          <th colspan="2">Przykład użycia</th>
+          <th>Czy wymaga zamknięcia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>table</th>
+          <td>
+            Tworzy tabelę, która może zawierać nagłówki, wiersze i komórki.
+          </td>
+          <td colspan="2">&lt;table&gt;&lt;/table&gt;</td>
+          <td>Tak</td>
+        </tr>
+        <tr>
+          <th>thead</th>
+          <td>
+            Grupuje wiersze nagłówkowe tabeli, zwykle zawierające nazwy kolumn.
+          </td>
+          <td colspan="2">
+            <pre>
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Imię&lt;/th&gt;
+    &lt;th&gt;Wiek&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+            </pre>
+          </td>
+          <td>Tak</td>
+        </tr>
+        <tr>
+          <th>tbody</th>
+          <td>Zawiera główną treść tabeli - dane podzielone na wiersze.</td>
+          <td colspan="2">
+            <pre>
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ala&lt;/td&gt;
+    &lt;td&gt;12&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+            </pre>
+          </td>
+          <td>Tak</td>
+        </tr>
+        <tr>
+          <th>th</th>
+          <td>
+            Tworzy komórkę nagłówkową kolumny lub wiersza. Tekst jest domyślnie
+            pogrubiony i wyśrodkowany.
+          </td>
+          <td colspan="2">&lt;th&gt;Nazwa produktu&lt;/th&gt;</td>
+          <td>Tak</td>
+        </tr>
+        <tr>
+          <th>td</th>
+          <td>Reprezentuje standardową komórkę w wierszu tabeli.</td>
+          <td colspan="2">&lt;td&gt;Monitor&lt;/td&gt;</td>
+          <td>Tak</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
