@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Podstawowe informacje</legend>
+        <label for="imie-nazwisko">Imię i nazwisko</label><br />
+        <input
+          type="text"
+          id="imie-nazwisko"
+          name="imie-nazwisko"
+          required
+        /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          required
+        /><br />
+        <label for="telefon">Telefon</label><br />
+        <input
+          type="tel"
+          id="telefon"
+          name="telefon"
+          placeholder="+48123456789"
+        /><br />
+        <label for="data-urodzenia">Data urodzenia</label> <br />
+        <input
+          type="date"
+          id="data-urodzenia"
+          name="data-urodzenia"
+          required
+        /><br />
+        <label for="haslo">Hasło</label><br />
+        <input
+          type="password"
+          id="haslo"
+          name="haslo"
+          minlength="8"
+          required
+        /><br />
+        <label for="potw-hasla">Potwierdzenie hasła</label><br />
+        <input
+          type="password"
+          id="potw-hasla"
+          name="potw-hasla"
+          required
+        /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Płeć</legend>
+        <input type="radio" id="kobieta" name="plec" value="kobieta" />
+        <label for="kobieta">Kobieta</label><br />
+        <input type="radio" id="mezczyzna" name="plec" value="mezczyzna" />
+        <label for="mezczyzna">Mężczyzna</label><br />
+        <input type="radio" id="inne" name="plec" value="inne" />
+        <label for="inne">Inne</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Zainteresowania</legend>
+        <input
+          type="checkbox"
+          id="gry-komputerowe"
+          name="gry-komputerowe"
+          value="gry-komputerowe"
+        />
+        <label for="gry-komputerowe">Gry komputerowe</label><br />
+        <input type="checkbox" name="muzyka" id="muzyka" value="muzyka" />
+        <label for="muzyka">Muzyka</label><br />
+        <input
+          type="checkbox"
+          name="gry-planszowe"
+          id="gry-planszowe"
+          value="gry-planszowe"
+        />
+        <label for="gry-planszowe">Gry planszowe</label><br />
+        <input
+          type="checkbox"
+          name="pilka-nozna"
+          id="pilka-nozna"
+          value="pilka-nozna"
+        />
+        <label for="pilka-nozna">Piłka nożna</label><br />
+        <input
+          type="checkbox"
+          name="siatkowka"
+          id="siatkowka"
+          value="siatkowka"
+        />
+        <label for="siatkowka">Siatkówka</label><br />
+      </fieldset>
+      <fieldset>
+        <legend>Dodatkowe</legend>
+        <label for="poziom-doswiadczenia">Poziom doświadczenia</label><br />
+        <input
+          type="range"
+          name="poziom-doswiadczenia"
+          id="poziom-doswiadczenia"
+          min="0"
+          max="10"
+          step="1"
+        /><br />
+        <label for="cv">CV</label><br />
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc" /><br />
+        <label for="wiadomosc">Wiadomość</label><br />
+        <textarea
+          name="wiadomosc"
+          id="wiadomosc"
+          rows="5"
+          maxlength="500"
+        ></textarea
+        ><br />
+        <label for="strona-www">Strona WWW</label><br />
+        <input type="url" name="strona-www" id="strona-www" /><br />
+        <input type="checkbox" name="zgoda" id="zgoda" required />
+        <label for="zgoda">Zgoda na regulamin</label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
