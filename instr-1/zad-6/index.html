@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantyczny HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Moja Strona</h1>
+      <nav>
+        <span>Home</span>
+        <span>O nas</span>
+        <span>Kontakt</span>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2 class="post-title">Tytuł artykułu</h2>
+        <p class="post-meta">
+          Autor: Jan Kowalski | Data:
+          <time datetime="2025-01-15">2025-01-15</time>
+        </p>
+        <section class="post-content">
+          <p>To jest pierwszy paragraf artykułu...</p>
+          <p>To jest drugi paragraf artykułu...</p>
+        </section>
+      </article>
+      <article>
+        <h2 class="post-title">Drugi artykuł</h2>
+        <section class="post-content">
+          <p>Treść drugiego artykułu...</p>
+        </section>
+      </article>
+    </main>
+    <aside>
+      <article class="widget">
+        <h3 class="widget-title">Kategorie</h3>
+        <div>Technologia</div>
+        <div>Nauka</div>
+        <div>Sport</div>
+      </article>
+    </aside>
+    <footer>© 2025 Moja Strona. Wszelkie prawa zastrzeżone.</footer>
+  </body>
+</html>
+
+<!-- Jakie zmiany wprowadziłem i dlaczego:
+ Oprócz zamiany elementów <div> i <span> na elementy semantyczne takie jak <main> i <article> skupiłem się również na usuwaniu
+ niepotrzebnych klas takich jak klasa "main-content", ponieważ w wypadku użycia tagu semantycznego, w tym wypadku <main>
+ klasa ta nie jest do niczego potrzebna a jedynie zaśmieca kod. Usunąłem również klasę post, zastępując ją tagiem <article>,
+ natomiast pozostawiłem np klasę widget, żeby odróżnić artykuły od widgetu mimo użycia tego samego tagu.
+ Poza tym usunąłem kilka w mojej opinii niepotrzebnych divów takich jak <div id="page">, który na dobrą sprawę spełnia tę samą funkcję co <body>,
+ zwłaszcza w wypadku braku CSSa.-->
+
+<!-- Jakie są korzyści semantycznego HTML dla SEO i dostępności:
+  Semantyczny HTML pozwala wyszukiwarce na lepsze zrozumienie strony, co poprawia indeksowanie i trafność wyników, a także poprawia wyświetlanie snippetów.
+  Semantyczny HTML ułatwia również nawigację użytkownikom korzystającym z czytników ekranu oraz innych narzędzi dostępności.-->
+
+<!-- Kiedy nadal uzasadnione jest użycie <div> zamiast tagu semantycznego:
+    Użycie elementu <div> jest uzasadnione kiedy w danym miejscu nie pasuje żaden element semantyczny. Np w wypadku gdy potrzebny jest wrapper,
+    żeby poprawić układ strony przy użyciu CSS.  -->
