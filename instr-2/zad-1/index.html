@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zadanie 1 z instrukcji 1 z technologii frontendowych"
+    />
+    <meta name="author" content="Jakub Kijak" />
+    <title>Zadanie 1</title>
+    <style>
+      body {
+        font-family: "Verdana";
+        background-color: red;
+      }
+
+      #tytul {
+        color: yellowgreen;
+      }
+
+      .tekst {
+        background-color: yellow;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="tytul">Lorem ipsum</h1>
+    <p class="tekst" style="color: blue">
+      <span style="font-size: 24px">Lorem ipsum dolor sit amet</span>,
+      consectetur adipiscing elit. Pellentesque elementum vel diam imperdiet
+      mollis. Integer aliquet nisi sit amet porta vestibulum. Nam sed fringilla
+      turpis. Quisque in vehicula tellus, at tempor elit. Nunc ultrices lorem in
+      porttitor ultrices. Fusce scelerisque urna at eleifend auctor. Etiam
+      posuere urna dolor, eget congue.
+    </p>
+  </body>
+</html>
+
+<!-- Kolejność priorytetów:
+ W tym wypadku ze stylami w <style> wygrywają style zapisane w zewnętrznym pliku CSS.
+ Dzieje się tak ponieważ style z zewnętrznego pliku są zapisane później niż te zapisane bezpośrenio w HTML, 
+ nadpisują więc one style z tagu <style>. Gdyby zamienić je miejscami, priorytet miałyby style zapisane w HTML. -->
+
+<!-- Kiedy stosować każdy sposób:
+ Zazwyczaj powinno się stosować wyłącznie zewnętrzny CSS. Tagu <style> powinno się używać do stylów używanych wyłącznie w danym pliku HTML, 
+na przykład żeby nadpisać inny styl obecny już w oddzielnym pliku. Inline CSS używa się natomiast głównie do bardzo małych zmian specyficznych tylko dla jednego elementu. -->
+
+<!-- Zalety i wady każdej metody:
+ Zewnętrzny arkusz CSS:
+    Zalety:
+      - Poprawia czytelność kodu
+      - Sprawia że kod jest modularny, można więc użyć tego samego arkusza stylów do kilku plików HTML
+      - Umożliwia łatwą zamianę arkuszy stylów gdyby zaszła taka potrzeba
+    Wady:
+      - Nie nadaje się do zmian pojedynczych elementów
+  Tag <style>:
+    Zalety:
+      - Umożliwia łatwą zmianę części elementów w pliku HTML, lub nawet zbudowanie prostych stylów dla całej strony
+    Wady:
+      - Zaśmieca <head>
+      - Przez to że jest wbudowany w plik HTML, raczej nie nadaje się do dużych zmian
+      - Brak modularności
+  Inline CSS:
+    Zalety:
+      - Pozwala na wprowadzanie szybkich, niedużych zmian w stylach dla pojedynczych elementów
+    Wady:
+      - Przy nadmiernym użyciu zaśmieca cały plik HTML
+      - Nie nadaje się do dużych zmian przez słabą czytelność
+      - Brak modularności-->
