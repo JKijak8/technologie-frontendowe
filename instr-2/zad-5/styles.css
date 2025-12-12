@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[type="url"] {
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 150rem;
+}
+
+input::placeholder {
+  font-weight: 900;
+}
+
+fieldset:focus-within {
+  border: dashed blue 2px;
+}
+
+label {
+  display: inline-block;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+fieldset {
+  border: 1px dashed black;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  margin-bottom: 5px;
+}
+
+input:hover:not(input:disabled),
+textarea,
+button {
+  box-shadow: 2px 2px 2px;
+}
+
+input:valid {
+  border: solid green 2px;
+}
+
+input:invalid {
+  border: solid red 2px;
+}
+
+input:focus {
+  border: solid blue 2px;
+}
+
+input:checked + label {
+  color: green;
+}
+
+input:disabled {
+  background-color: gray;
+}
+
+input:required {
+  background-color: beige;
+}
+
+input:required + label::before {
+  content: "*";
+}
+
+.required::after {
+  content: "*";
+}
+
+input:valid + div::after {
+  content: "✓";
+  color: green;
+}
+
+input:invalid + div::after {
+  content: "✗";
+  color: red;
+}
+
+legend::first-letter {
+  font-size: 1.5em;
+}
