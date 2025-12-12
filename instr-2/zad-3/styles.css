@@ -1,0 +1,89 @@
+:root {
+  --background-color: #30332e;
+  --highlighted-section-color: rgba(78, 205, 196, 0.2);
+  --link-color: #55868c;
+  --text-color: #fffbfc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul > li {
+  margin: 5px;
+  padding: 10px;
+}
+
+ul > li:nth-child(2n) {
+  background-color: var(--highlighted-section-color);
+}
+
+ol {
+  list-style-type: upper-roman;
+  border-left: 2px dashed var(--text-color);
+}
+
+dt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--highlighted-section-color);
+}
+
+dd {
+  text-indent: 5%;
+}
+
+dd:not(dd:last-of-type) {
+  border-bottom: 1px solid var(--text-color);
+}
+
+th,
+td {
+  border: 1px solid var(--text-color);
+  padding: 12px;
+}
+
+tr:not(thead > tr) {
+  background-color: var(--background-color);
+}
+
+tr:nth-child(2n) {
+  background-color: var(--highlighted-section-color);
+}
+
+thead {
+  border-bottom: 3px solid var(--text-color);
+  background-color: var(--link-color);
+}
+
+table {
+  border: 3px solid var(--text-color);
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100rem;
+  box-shadow: 0 2px 5px var(--highlighted-section-color);
+}
+
+tr:hover {
+  filter: brightness(1.5);
+}
+
+div {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid var(--text-color);
+  font-size: 5rem;
+}
+
+#content {
+  box-sizing: content-box;
+}
