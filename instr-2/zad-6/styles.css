@@ -10,6 +10,10 @@ body {
   color: var(--text-color);
 }
 
+* {
+  margin: 5px;
+}
+
 #background-transition {
   height: 5em;
   width: 5em;
@@ -173,4 +177,32 @@ body {
   box-sizing: border-box;
   animation: obrot 1s linear infinite;
   animation-direction: alternate;
+}
+
+#loader-container {
+  height: 5em;
+  width: 5em;
+  background-color: var(--highlighted-section-color);
+  padding: 15px;
+}
+
+@keyframes obrot3d {
+  0% {
+    transform: perspective(50rem) rotateX(0deg);
+    backface-visibility: hidden;
+  }
+  100% {
+    transform: perspective(5rem) rotateX(360deg);
+    backface-visibility: hidden;
+  }
+}
+
+#flip {
+  height: 5em;
+  width: 5em;
+  background-color: var(--highlighted-section-color);
+  padding: 15px;
+  animation-name: obrot3d;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
