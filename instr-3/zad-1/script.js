@@ -42,5 +42,5 @@ console.log("5" === 5);
 
 //&& - operator logiczny AND; true && false = false
 //! - operator logiczny NOT; !false = true
-//|| - operator logiczny OR; false || true = true
+//|| - operator logiczny OR; false || true = true, czyli końcowy wynik = true
 console.log((true && false) || !false);

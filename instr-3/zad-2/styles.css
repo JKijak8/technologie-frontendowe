@@ -1,0 +1,92 @@
+:root {
+  --background-color: #30332e;
+  --highlighted-section-color: hsl(105, 100%, 1%);
+  --link-color: #55868c;
+  --text-color: #fffbfc;
+  --mark-color: rgba(78, 205, 196, 0.2);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body,
+mark {
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p,
+pre,
+blockquote {
+  font-family: "Lilex", Arial, Helvetica, sans-serif;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+section > p:first-of-type {
+  text-indent: 2%;
+}
+
+pre,
+blockquote {
+  background-color: var(--highlighted-section-color);
+}
+
+pre {
+  text-align: left;
+}
+
+blockquote {
+  text-align: center;
+}
+
+li {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+}
+
+mark {
+  background-color: var(--mark-color);
+}
+
+:link {
+  color: var(--link-color);
+}
+
+:visited {
+  color: var(--mark-color);
+}
+
+h1 {
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+  text-shadow: 10px 10px 10px var(--highlighted-section-color);
+}
