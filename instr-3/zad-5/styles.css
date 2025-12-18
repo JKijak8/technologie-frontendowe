@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[type="url"] {
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 150rem;
+}
+
+input::placeholder {
+  font-weight: 900;
+}
+
+fieldset:focus-within {
+  border: dashed blue 2px;
+}
+
+label {
+  display: inline-block;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+fieldset {
+  border: 1px dashed black;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  margin-bottom: 5px;
+}
+
+input:hover:not(input:disabled),
+textarea,
+button {
+  box-shadow: 2px 2px 2px;
+}
+
+input:focus {
+  border: solid blue 2px;
+}
+
+input:checked + label {
+  color: green;
+}
+
+input:disabled {
+  background-color: gray;
+}
+
+input:required {
+  background-color: beige;
+}
+
+input:required + label::before {
+  content: "*";
+}
+
+.required::after {
+  content: "*";
+}
+
+legend::first-letter {
+  font-size: 1.5em;
+}
+
+.error-message {
+  color: #b00020;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.input-invalid {
+  border: 2px solid #b00020 !important;
+  box-shadow: 0 0 4px rgba(176, 0, 32, 0.15);
+}
+
+.input-valid {
+  border: 2px solid #2a9d3a !important;
+  box-shadow: 0 0 4px rgba(42, 157, 58, 0.12);
+}
+
+#form-status-box .success-message {
+  background: #ecfde6;
+  border: 1px solid #2a9d3a;
+  color: #0b6623;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  font-weight: 700;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Podstawowe informacje</legend>
+        <div>
+          <label for="imie-nazwisko" class="required">Imię i nazwisko</label>
+          <br />
+          <input type="text" id="imie-nazwisko" name="imie-nazwisko" />
+          <div class="error"></div>
+          <br />
+        </div>
+        <div>
+          <label for="email" class="required">Email</label><br />
+          <input type="email" id="email" name="email" />
+          <div class="error"></div>
+          <br />
+        </div>
+        <div>
+          <label for="telefon">Telefon</label><br />
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            placeholder="+48123456789"
+          />
+          <div class="error"></div>
+          <br />
+        </div>
+        <div>
+          <label for="data-urodzenia" class="required">Data urodzenia</label>
+          <br />
+          <input type="date" id="data-urodzenia" name="data-urodzenia" />
+          <div class="error"></div>
+          <br />
+        </div>
+        <div>
+          <label for="haslo" class="required">Hasło</label><br />
+          <input type="password" id="haslo" name="haslo" />
+          <div class="error"></div>
+          <br />
+        </div>
+        <div>
+          <label for="potw-hasla" class="required">Potwierdzenie hasła</label>
+          <br />
+          <input type="password" id="potw-hasla" name="potw-hasla" />
+          <div class="error"></div>
+          <br />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Płeć</legend>
+        <input type="radio" id="kobieta" name="plec" value="kobieta" />
+        <label for="kobieta">Kobieta</label><br />
+        <input type="radio" id="mezczyzna" name="plec" value="mezczyzna" />
+        <label for="mezczyzna">Mężczyzna</label><br />
+        <input type="radio" id="inne" name="plec" value="inne" />
+        <label for="inne">Inne</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Zainteresowania</legend>
+        <input
+          type="checkbox"
+          id="gry-komputerowe"
+          name="gry-komputerowe"
+          value="gry-komputerowe"
+        />
+        <label for="gry-komputerowe">Gry komputerowe</label><br />
+        <input type="checkbox" name="muzyka" id="muzyka" value="muzyka" />
+        <label for="muzyka">Muzyka</label><br />
+        <input
+          type="checkbox"
+          name="gry-planszowe"
+          id="gry-planszowe"
+          value="gry-planszowe"
+        />
+        <label for="gry-planszowe">Gry planszowe</label><br />
+        <input
+          type="checkbox"
+          name="pilka-nozna"
+          id="pilka-nozna"
+          value="pilka-nozna"
+        />
+        <label for="pilka-nozna">Piłka nożna</label><br />
+        <input
+          type="checkbox"
+          name="siatkowka"
+          id="siatkowka"
+          value="siatkowka"
+        />
+        <label for="siatkowka">Siatkówka</label><br />
+      </fieldset>
+      <fieldset>
+        <legend>Dodatkowe</legend>
+        <label for="poziom-doswiadczenia">Poziom doświadczenia</label><br />
+        <input
+          type="range"
+          name="poziom-doswiadczenia"
+          id="poziom-doswiadczenia"
+          min="0"
+          max="10"
+          step="1"
+        /><br />
+        <label for="cv">CV</label><br />
+        <input
+          type="file"
+          id="cv"
+          name="cv"
+          accept=".pdf,.doc"
+          disabled
+        /><br />
+        <label for="wiadomosc">Wiadomość</label><br />
+        <div>
+          <textarea
+            name="wiadomosc"
+            id="wiadomosc"
+            rows="5"
+            maxlength="500"
+          ></textarea
+          ><br />
+          <div class="error"></div>
+        </div>
+        <label for="strona-www">Strona WWW</label><br />
+        <input type="url" name="strona-www" id="strona-www" /><br />
+        <div>
+          <input type="checkbox" name="zgoda" id="zgoda" />
+          <div class="error"></div>
+        </div>
+        <div>
+          <label for="zgoda" class="required">Zgoda na regulamin</label>
+          <div class="error"></div>
+        </div>
+      </fieldset>
+      <button type="submit" value="Submit">Submit</button>
+      <button type="reset" value="Reset">Reset</button>
+      <div id="submit-msg"></div>
+    </form>
+  </body>
+</html>
